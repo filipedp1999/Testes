@@ -1,16 +1,46 @@
 {
-  "posts": [
+  "heroes": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "X",
+      "speed": 1,
+      "color": "red",
+      "position": [
+        217.09375,
+        511.625
+      ],
+      "id": 1
+    },
+    {
+      "name": "X",
+      "speed": 1,
+      "color": "red",
+      "position": [
+        131.6875,
+        557.765625
+      ],
+      "id": 2
+    },
+    {
+      "name": "X",
+      "speed": 1,
+      "color": "red",
+      "position": [
+        199.765625,
+        667.1875
+      ],
+      "id": 3
     }
   ],
-  "comments": [
+  "enemys": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "A",
+      "speed": "1"
+    },
+    {
+      "id": 2,
+      "body": "test comment 2",
+      "postId": 2
     }
   ],
   "profile": {
