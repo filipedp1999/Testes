@@ -1,16 +1,19 @@
+/* Importação das folhas estilos ( RETIRAR O POST.CSS EM webpack,dev.conf.js*/
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap";
+// import "materialize-css/dist/css/materialize.css";
+/* Importação e uso do jquery */
 import "jquery/dist/jquery";
+window.$ = window.jQuery = require("jquery");
+/* Bootstrap + Materialize */
+// import "materialize-css/dist/js/materialize";
+import "bootstrap/dist/js/bootstrap";
 import "events/events";
-
+/* Dependencias do Vue Js */
 import Vue from "vue";
 import App from "./App";
 import router from "./router";
 import VueSession from "vue-session";
 import VueResource from "vue-resource";
-
-window.$ = window.jQuery = require("jquery");
-
 Vue.use(VueSession);
 Vue.use(VueResource);
 Vue.config.productionTip = false;

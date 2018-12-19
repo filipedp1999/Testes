@@ -1,7 +1,7 @@
 {
-  "name": "game_node",
+  "name": "teste_semi_novos_bh",
   "version": "1.0.0",
-  "description": "Game in node js",
+  "description": "Teste para Front End Semi Novos BH",
   "author": "Filipe Dev",
   "private": true,
   "scripts": {

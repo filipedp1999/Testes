@@ -1,17 +1,15 @@
 import Vue from "vue";
 import Router from "vue-router";
-import HelloWorld from "@/components/HelloWorld";
-import Level from "@/components/Level";
-import Canvas from "@/components/Canvas";
+import Home from "@/components/Home";
 
 Vue.use(Router);
-
+/* Rotas do Vue */
 export default new Router({
   routes: [
     {
       path: "/",
-      name: "Canvas",
-      component: Canvas
+      name: "Home",
+      component: Home
     }
   ]
 });
