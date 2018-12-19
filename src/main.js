@@ -15,6 +15,15 @@ Vue.use(VueSession);
 Vue.use(VueResource);
 Vue.config.productionTip = false;
 
+Vue.mixin({
+  data() {
+    return {
+      host: "http://192.168.17.20/",
+      server: "http://192.168.17.20:1515/",
+      database: "http://192.168.17.20:3000/"
+    };
+  }
+});
 /* eslint-disable no-new */
 new Vue({
   el: "#app",

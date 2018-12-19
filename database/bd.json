@@ -3,32 +3,29 @@
     {
       "name": "X",
       "speed": 1,
-      "color": "red",
-      "position": [
-        217.09375,
-        511.625
-      ],
+      "color": "blue",
+      "position": [0, 0],
       "id": 1
     },
     {
-      "name": "X",
+      "id": 2,
+      "name": "Z",
       "speed": 1,
       "color": "red",
-      "position": [
-        131.6875,
-        557.765625
-      ],
-      "id": 2
+      "position": {
+        "top": 50,
+        "left": 0
+      }
     },
     {
-      "name": "X",
+      "id": 3,
+      "name": "Y",
       "speed": 1,
-      "color": "red",
-      "position": [
-        199.765625,
-        667.1875
-      ],
-      "id": 3
+      "color": "green",
+      "position": {
+        "top": 100,
+        "left": 0
+      }
     }
   ],
   "enemys": [

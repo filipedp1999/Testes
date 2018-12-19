@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div v-for="herox in all_heroes">
+    <!-- <div v-for="herox in all_heroes" :key="herox.id">
       <div :class="'hero '+herox.color" :id="'hero'+herox.id">{{herox.name}} // {{herox.id}}</div>
     </div>
 
-    <input class="controles" v-model="hero_selected" type="number" id>
+    <input class="controles" v-model="hero_selected" type="number" id>-->
   </div>
 </template>
 
@@ -49,29 +49,29 @@ export default {
     },
     running: function() {
       let Vue = this;
-      window.setInterval(function() {
-        var base_url = "http://192.168.17.20:3000/";
-        Vue.$http.get(base_url + "heroes/").then(res => {
-          res.body.forEach(function(xherox) {
-            $("#hero" + xherox.id).css(
-              {
-                top: xherox.position[0],
-                left: xherox.position[1]
-              },
-              10
-            );
-            console.log(xherox);
-          });
+      // window.setInterval(function() {
+      var base_url = "http://192.168.17.20:3000/";
+      Vue.$http.get(base_url + "heroes/").then(res => {
+        res.body.forEach(function(xherox) {
+          $("#hero" + xherox.id).css(
+            {
+              top: xherox.position[0],
+              left: xherox.position[1]
+            },
+            10
+          );
+          console.log(xherox);
         });
-      }, 70);
+      });
+      //}, 70);
     },
     run: function(callback, running) {
       var base_url = "http://192.168.17.20:3000/";
-      this.$http.get(base_url + "heroes/").then(res => {
-        this.all_heroes = res.body;
-        callback(this.hero_selected, this.accept_commands);
-        running();
-      });
+      // this.$http.get(base_url + "heroes/").then(res => {
+      this.all_heroes = res.body;
+      callback(this.hero_selected, this.accept_commands);
+      running();
+      //});
     },
     accept_commands: function(callback) {
       var base_url = "http://192.168.17.20:3000/";
@@ -132,13 +132,13 @@ export default {
     }
   },
   created() {
-    this.run(this.load_hero, this.running);
+    // this.run(this.load_hero, this.running);
   },
   watch: {
-    hero_selected: function() {
-      // this.run(this.load_hero, this.running);
-      // console.log(this.hero);
-    }
+    // hero_selected: function() {
+    // this.run(this.load_hero, this.running);
+    // console.log(this.hero);
+    // }
   },
   mounted() {}
 };
@@ -165,3 +165,4 @@ export default {
   margin-left: 85%;
 }
 </style>
+*/
